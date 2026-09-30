@@ -1,1 +1,10 @@
-{"domain":"hvac_weather_curve","name":"HVAC Weather Curve","version":"1.0.0","documentation":"https://github.com/example/hvac-weather-curve","config_flow":true,"codeowners":[],"requirements":[]}
+{
+  "domain": "hvac_weather_curve",
+  "name": "HVAC Weather Curve",
+  "version": "1.0.1",
+  "documentation": "https://github.com/yourusername/hvac-weather-curve",
+  "issue_tracker": "https://github.com/yourusername/hvac-weather-curve/issues",
+  "config_flow": true,
+  "codeowners": [],
+  "requirements": []
+}
