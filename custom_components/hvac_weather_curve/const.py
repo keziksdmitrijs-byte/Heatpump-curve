@@ -1,0 +1,5 @@
+DOMAIN = "hvac_weather_curve"
+CONF_MIN_TEMP = "min_temp"
+CONF_MAX_TEMP = "max_temp"
+CONF_STEP = "step"
+CONF_POINTS = "points"
