@@ -1,13 +1,10 @@
-# HVAC Weather Curve
+# HVAC Weather Curve v1.1.0
 
-Погодозависимая кривая температуры подачи для Home Assistant.
+В конфигураторе можно выбрать датчик наружной температуры и целевую сущность `number` или `input_number`. Интеграция рассчитывает температуру подачи с линейной интерполяцией и записывает её в целевую сущность.
 
-## Установка через HACS
-1. Создайте публичный GitHub-репозиторий.
-2. Загрузите в корень репозитория папку `custom_components` и файл `hacs.json`.
-3. В HACS откройте **Integrations → ⋮ → Custom repositories**.
-4. Добавьте URL репозитория и выберите тип **Integration**.
-5. Создайте GitHub Release с тегом `v1.0.1` — одного commit или tag недостаточно.
-6. Установите интеграцию и перезапустите Home Assistant.
+Добавьте ресурс карточки: `/local/hvac-weather-curve-card.js`, тип `JavaScript module`. Затем используйте:
 
-Точки кривой: `-20:55,-10:49,0:43,10:35,15:30`. Используемый датчик наружной температуры: `sensor.outdoor_temperature`.
+```yaml
+type: custom:hvac-weather-curve-card
+entity: sensor.название_calculated_flow_temperature
+```
