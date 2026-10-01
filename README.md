@@ -1,10 +1,5 @@
-# HVAC Weather Curve v1.1.0
+# HVAC Weather Curve v1.1.1
 
-В конфигураторе можно выбрать датчик наружной температуры и целевую сущность `number` или `input_number`. Интеграция рассчитывает температуру подачи с линейной интерполяцией и записывает её в целевую сущность.
+Исправлено: `SensorEntity` импортируется из `homeassistant.components.sensor`, как требует актуальный Home Assistant.
 
-Добавьте ресурс карточки: `/local/hvac-weather-curve-card.js`, тип `JavaScript module`. Затем используйте:
-
-```yaml
-type: custom:hvac-weather-curve-card
-entity: sensor.название_calculated_flow_temperature
-```
+После обновления удалите старую запись интеграции, перезапустите Home Assistant и добавьте интеграцию заново.
